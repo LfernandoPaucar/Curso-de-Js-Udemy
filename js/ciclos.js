@@ -144,10 +144,11 @@ while(i <= 5){
 }
 console.log(suma);*/
 
+/*
 let suma = 0;
 let i = 1;
 do{
     suma += i;
     i++;
     console.log(suma);
-} while(i <= 5);
+} while(i <= 5);*/
