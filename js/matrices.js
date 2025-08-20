@@ -36,10 +36,10 @@ console.log(matrizCapi.length);
 console.log(matrizCapi[0].length);
 console.log(matrizCapi[1].length);
 
-/*
-for(){
-    //columnas
-    for(){
 
+for(let ren = 0; ren < matrizCapi.length; ren++){
+    //columnas
+    for(let col = 0; col < matrizCapi[ren].length; col++){
+        console.log(`Elemento[${ren}][${col}] = ${matrizCapi[ren][col]}`);
     }
-}*/
+}
