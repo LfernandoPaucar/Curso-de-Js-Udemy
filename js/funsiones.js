@@ -81,3 +81,132 @@ function miFuncion (variableLocal){
 miFuncion(variableGlobal);
 
 console.log(`variableGlobal ${variableGlobal}`)
+
+
+/// Funciones recursivas
+//Imprimir 3, 2, 1
+function funcionRecursiva(numero){
+    //Caso base
+    if(numero == 1){
+        console.log(numero)
+    } else {
+        console.log(numero);
+        funcionRecursiva(numero - 1);
+    }
+}
+
+funcionRecursiva(10);
+
+//Ejercicios 
+
+//Ej 1:
+
+//// Funcion saludo
+
+const mensajEnPantalla = document.getElementById("container-mensaje");
+
+/*
+function saludarAbrandon(){
+    return "Yo sere programador"
+}
+
+let mensaje = saludarAbrandon();
+
+
+mensajEnpantalla.textContent = mensaje; */
+
+//Ej 2:
+
+/*
+
+function saludarAalguien (nombre){
+    return "Hola " + nombre;
+}
+
+let nombreSaludo = prompt("Ingresa un nombre causita :D");
+
+mensajEnpantalla.textContent = saludarAalguien(nombreSaludo); */
+
+// Ej 3:
+/*
+const suma = (a, b) => {
+    return a + b;
+};
+
+console.log(suma(5, 6))
+*/
+
+//Ej 4:
+
+/*
+function cuadradoCausa (numero){
+    return numero * numero;
+};
+
+console.log(`El cuadrado causita es ${cuadradoCausa(4)}`); */
+
+//////Nivel 2:
+
+// Ej 1:
+
+/*
+let numeroInicial = parseInt(prompt("Inrgesa un numero batereia"));
+
+function imprimirPares (limite) {
+    for(i = 0; i < limite; i += 2){
+        console.log(i);
+    }
+}
+
+imprimirPares(numeroInicial); */
+
+// Ej 2:
+/*
+function cualEsMayor (a, b){
+    if(a > b){
+        console.log(`El mayor es ${a}`);
+        return
+    } else if (b > a){
+        console.log(`El mayor es ${b}`);
+        return
+    }
+}
+
+cualEsMayor(20, 10); */
+
+//Ej 3:
+
+// Tabla de multiplicar:
+
+/*
+function multiplicarTabla (numero){
+    let multiplicador = numero;
+    let limite = 12;
+    for(i = 1; i <= limite; i++){
+        console.log(`${i} x ${numero} es = ${i * multiplicador}`);
+    }
+}
+
+multiplicarTabla(12); */
+
+// Ej 4:
+
+////Contar vocales:
+
+/*
+function contarVocales (palabra){
+    let contador = 0;
+    let vocales = "aeiouAEIOU"
+
+    for (let i = 0; i < palabra.length; i++){
+        if(vocales.includes(palabra[i])){
+            contador++;
+        }
+    }
+
+    return contador;
+}
+
+let nombre = prompt("Ingrese su nombre");
+
+console.log(`${nombre} tiene ${contarVocales(nombre)} vocales`); */
