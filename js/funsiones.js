@@ -1,5 +1,7 @@
 // Procedimiento JS
 // 1.-Definir el procedimiento
+
+/*
 function saludar (mensaje){
     //Cuerpo de la funcion
     console.log(`Mensaje: ${mensaje}`);
@@ -38,7 +40,7 @@ console.log(argumento);
 */
 ////Paso por referencia
 //Objetos (array) se pasan por referencia
-
+/*
 function cambiarValor(parametro){
     parametro[0] = 20
 }
@@ -55,36 +57,38 @@ console.log(`Despues de funcion: ${arreglo[0]}`);
 function cambiarSrting (string){
     string = "Adios";
 }
-
+*/
 
 // Llamamos a la funcion
-
+/*
 let argumento = "Hola";
 console.log(`Antes de funcion: ${argumento}`);
 cambiarSrting(argumento);
-console.log(`Despues de funcion: ${argumento}`);
+console.log(`Despues de funcion: ${argumento}`);*/
 
 // Alcance de variables Js:
 
-let variableGlobal = 5;
+//let variableGlobal = 5;
 
 // Define funcion
-
+/*
 function miFuncion (variableLocal){
     console.log(`variableLocal ${variableLocal}`);
     // Modificamos la variable global
     variableGlobal = 20;   
 }
-
+*/
 // Llamamos a la función
-
+/*
 miFuncion(variableGlobal);
 
 console.log(`variableGlobal ${variableGlobal}`)
-
+*/
 
 /// Funciones recursivas
 //Imprimir 3, 2, 1
+/*
+
 function funcionRecursiva(numero){
     //Caso base
     if(numero == 1){
@@ -95,15 +99,14 @@ function funcionRecursiva(numero){
     }
 }
 
-funcionRecursiva(10);
-
+funcionRecursiva(10);*/
 //Ejercicios 
 
 //Ej 1:
 
 //// Funcion saludo
 
-const mensajEnPantalla = document.getElementById("container-mensaje");
+//const mensajEnPantalla = document.getElementById("container-mensaje");
 
 /*
 function saludarAbrandon(){
@@ -210,3 +213,66 @@ function contarVocales (palabra){
 let nombre = prompt("Ingrese su nombre");
 
 console.log(`${nombre} tiene ${contarVocales(nombre)} vocales`); */
+
+
+///// Nuevos ejercicios:
+
+//Ej.1
+
+//Saludo personalizado
+
+/*
+function saludoPersonalizado (nombre){
+    console.log(nombre)
+}
+
+let dato = prompt("Ingresa tu nombre causita");
+
+saludoPersonalizado(dato); */
+
+//Ej.2
+
+// Identifica si una palabra es palindromo:
+/*
+function esPalindromo (palabra){
+    palabra = palabra.toLowerCase();
+
+
+    let invertida = palabra.split("").reverse().join("");
+
+    return palabra === invertida;
+}
+
+
+console.log(esPalindromo("oso")); */
+
+
+//Ej.3
+// Retornar el factorial de un numero
+
+function factorial(n){
+    let resultado = 1;
+    for (let i = 1; i <= n ; i++){
+        resultado *= i;
+    }
+    return resultado;
+}
+
+console.log(factorial(3));
+
+//Ej.4 Suma digitos
+
+
+function sumarDigitos(n){
+    let numeroString = n.toString();
+    let suma = 0;
+
+    for (let i = 0; i < numeroString.length; i++){
+        let numero = parseInt(numeroString[i]);
+        suma += numero;
+    }
+
+    return suma;
+}
+
+console.log(sumarDigitos(2345));
