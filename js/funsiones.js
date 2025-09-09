@@ -249,7 +249,7 @@ console.log(esPalindromo("oso")); */
 
 //Ej.3
 // Retornar el factorial de un numero
-
+/*
 function factorial(n){
     let resultado = 1;
     for (let i = 1; i <= n ; i++){
@@ -258,11 +258,11 @@ function factorial(n){
     return resultado;
 }
 
-console.log(factorial(3));
+console.log(factorial(3));*/
 
 //Ej.4 Suma digitos
 
-
+/*
 function sumarDigitos(n){
     let numeroString = n.toString();
     let suma = 0;
@@ -275,4 +275,44 @@ function sumarDigitos(n){
     return suma;
 }
 
-console.log(sumarDigitos(2345));
+console.log(sumarDigitos(2345));*/
+
+//Ej.5 Edad minima
+
+/*
+let edadAdulto = 18;
+
+function edadMinima(edad){
+    if( edad >= edadAdulto){
+        return "Eres mayor de edad, puedes pasar";
+    } else{
+        return "Eres menor de edad, no puedes pasar";
+    }
+}
+
+let dato = parseInt(prompt("Ingresa tu edad bro"));
+
+
+mensajEnPantalla.textContent = edadMinima(dato); */
+let mensajEnPantalla = document.getElementById("container-mensaje");
+
+// Ej.6 Calificación escolar
+/*
+function calificacionEscolar(nota){
+    if( nota > 20){
+        return "La nota no es valida";
+    } else if (nota < 0){
+        return "La nota no es valida";
+    } else if (nota >= 11 && nota <= 14){ 
+        return "Aprobado, su alumno se salvo por poco";
+    }else if (nota >= 15 && nota <= 17) {
+        return "Aprobado, buena nota";
+    }else if (nota >= 18 && nota <= 20) {
+        return "Aprobado, su alumno es un chucha";
+    }else {
+        return "Reprobado, su alumno es un burro";}
+}
+
+let notaAlumno = parseFloat(prompt("Ingresa la nota del alumno"));
+
+mensajEnPantalla.textContent = calificacionEscolar(notaAlumno); */
